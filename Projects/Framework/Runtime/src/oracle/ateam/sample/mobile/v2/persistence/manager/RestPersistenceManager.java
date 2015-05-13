@@ -197,7 +197,7 @@ public abstract class RestPersistenceManager
             String attrName = attributesToExclude.get(k);
             if (attrName.startsWith(childDataObjectName+"."))
             {
-              childAttrsToIgnore.add(attrName.substring(childDataObjectName.length()));
+              childAttrsToIgnore.add(attrName.substring(childDataObjectName.length() + 1));
             }            
           }
         }
